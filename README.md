@@ -5,23 +5,6 @@
 ## Objective
 Implement and compare different types of sorting algorithms:
 
-- Bubble Sort
-- Insertion Sort
-- Merge Sort
-- Quick Sort
-- Selection Sort
-
-## Test Input Sizes
-- 10
-- 100
-- 1,000
-- 100,000
-
-## Test Input Sequences
-- Increasing
-- Decreasing
-- Random
-
 ## Language and Runtime
 - Language: Typescript
 - Runtime: Bun (or your preferred Typescript runtime)
@@ -113,7 +96,82 @@ You will keep being prompted to do this until you enter ‘x’ or ‘X’ as an
 | 1,000                 |      0.003 ms      |     1.124 ms       |     0.570 ms   |
 | 100,000               |       0.318 ms     |      11.444 s      |   5.762 s     |
 
+## Bubble Sort Performance Analysis
 
+Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
 
+### Best Case (Increasing Order)
 
+The best case occurs when the input is already sorted. In this case, Bubble Sort has a linear time complexity of O(n), where n is the size of the input. This is because the algorithm only needs to traverse the list once and doesn't need to make any swaps. However, your data shows that the time taken increases exponentially with the size of the input, which is not what we would expect for the best case.
 
+### Worst Case (Decreasing Order)
+
+The worst case occurs when the input is sorted in reverse order. Here, Bubble Sort has a quadratic time complexity of O(n^2), as it must compare and swap every element in the list for each element in the list. Your data seems to align with this expectation, as the time taken increases significantly with the size of the input.
+
+### Average Case (Random Order)
+
+On average, Bubble Sort also has a time complexity of O(n^2), as it is likely to make a significant number of swaps for randomly ordered input. Your data seems to align with this expectation as well.
+
+## Insertion Sort Performance Analysis
+
+Insertion Sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+
+### Best Case (Increasing Order)
+
+The best case occurs when the input is already sorted. In this case, Insertion Sort has a linear time complexity of O(n), where n is the size of the input. This is because the algorithm only needs to traverse the list once and doesn't need to make any swaps. Your data seems to align with this expectation, as the time taken increases linearly with the size of the input.
+
+### Worst Case (Decreasing Order)
+
+The worst case occurs when the input is sorted in reverse order. Here, Insertion Sort has a quadratic time complexity of O(n^2), as it must compare and swap every element in the list for each element in the list. Your data seems to align with this expectation, as the time taken increases significantly with the size of the input.
+
+### Average Case (Random Order)
+
+On average, Insertion Sort also has a time complexity of O(n^2), as it is likely to make a significant number of swaps for randomly ordered input. Your data seems to align with this expectation as well.
+
+## Merge Sort Performance Analysis
+
+Merge Sort is an efficient, stable sorting algorithm that works by dividing the unsorted list into n sublists, each containing one element (a list of one element is considered sorted), and then repeatedly merging sublists to produce new sorted sublists until there is only one sublist remaining.
+
+### Best Case (Increasing Order)
+
+The best case occurs when the input is already sorted. In this case, Merge Sort has a time complexity of O(n log n), where n is the size of the input. This is because the algorithm will still divide the list into individual elements and then merge them back together in sorted order. Your data seems to align with this expectation, as the time taken increases logarithmically with the size of the input.
+
+### Worst Case (Decreasing Order)
+
+The worst case occurs when the input is sorted in reverse order. Here, Merge Sort also has a time complexity of O(n log n), as it must still divide the list and then merge it back together. Your data seems to align with this expectation, as the time taken increases logarithmically with the size of the input.
+
+### Average Case (Random Order)
+
+On average, Merge Sort has a time complexity of O(n log n), as it is likely to make a significant number of comparisons and swaps for randomly ordered input. Your data seems to align with this expectation as well.
+
+## Quick Sort Performance Analysis
+
+Quick Sort is an efficient, comparison-based sorting algorithm that uses divide-and-conquer to sort elements. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then recursively sorted.
+
+### Best Case (Increasing Order)
+
+The best case occurs when the pivot always divides the array into two halves which leads to a time complexity of O(n log n), where n is the size of the input. However, your data shows that the time taken increases exponentially with the size of the input, which is not what we would expect for the best case.
+
+### Worst Case (Decreasing Order)
+
+The worst case occurs when the pivot is the smallest or largest element in the array. Here, Quick Sort has a quadratic time complexity of O(n^2), as it must compare and swap every element in the list for each element in the list. Your data seems to align with this expectation, as the time taken increases significantly with the size of the input.
+
+### Average Case (Random Order)
+
+On average, Quick Sort has a time complexity of O(n log n), as it is likely to make a significant number of comparisons and swaps for randomly ordered input. Your data seems to align with this expectation as well.
+
+## Selection Sort Performance Analysis
+
+Selection Sort is a simple comparison-based sorting algorithm. It works by dividing the input into a sorted and an unsorted region. The algorithm repeatedly selects the smallest (or largest, depending on the ordering) element from the unsorted region and moves it to the sorted region, until the unsorted region is empty.
+
+### Best Case (Increasing Order)
+
+The best case occurs when the input is already sorted. In this case, Selection Sort has a quadratic time complexity of O(n^2), where n is the size of the input. This is because the algorithm still needs to traverse the list for each element to confirm that it is in the correct position. Your data seems to align with this expectation, as the time taken increases significantly with the size of the input.
+
+### Worst Case (Decreasing Order)
+
+The worst case occurs when the input is sorted in reverse order. Here, Selection Sort also has a quadratic time complexity of O(n^2), as it must compare and swap every element in the list for each element in the list. Your data seems to align with this expectation, as the time taken increases significantly with the size of the input.
+
+### Average Case (Random Order)
+
+On average, Selection Sort also has a time complexity of O(n^2), as it is likely to make a significant number of comparisons and swaps for randomly ordered input. Your data seems to align with this expectation as well.
