@@ -67,12 +67,53 @@ Based on which algorithm you chose the program will use it to sort the array the
 You will keep being prompted to do this until you enter ‘x’ or ‘X’ as and algorithm option, additionally you can kill the program with ctrl + c
 
 ## Results
-| Sorting Algorithm | Size 10 | Size 100 | Size 1,000 | Size 100,000 |
-| ----------------- | ------- | -------- | ---------- | ------------ |
-| Bubble Sort       |         |          |            |              |
-| Insertion Sort    |         |          |            |              |
-| Merge Sort        |         |          |            |              |
-| Quick Sort        |         |          |            |              |
-| Selection Sort    |         |          |            |              |
+
+### Bubble Sort
+
+| Input Size / Sequence | Increasing | Decreasing | Random |
+| --------------------- | ---------- | ---------- | ------ |
+| 10                    |      0.002 ms      |      0.016 ms      |   0.003 ms     |
+| 100                   |      0.245 ms      |     0.134 ms       |    0.048 ms    |
+| 1,000                 |       1.408 ms     |       2.044 ms     |     1.940 ms   |
+| 100,000               |        14.389 s    |       20.256 s     |   30.495 s     |
+
+### Insertion Sort
+
+| Input Size / Sequence | Increasing | Decreasing | Random |
+| --------------------- | ---------- | ---------- | ------ |
+| 10                    |     0.122 ms       |     0.003 ms       |     0.002 ms   |
+| 100                   |        0.004 ms  |      1.502 ms      |     0.055 ms   |
+| 1,000                 |       0.129 ms     |       1.854 ms     |    0.663 ms    |
+| 100,000               |      0.717 ms      |     11.510 s       |    5.644 s    |
+
+### Merge Sort
+
+| Input Size / Sequence | Increasing | Decreasing | Random |
+| --------------------- | ---------- | ---------- | ------ |
+| 10                    |      0.167 ms      |       1.250 ms     |    0.049 ms    |
+| 100                   |       1.811 ms     |       0.187 ms     |     0.115 ms   |
+| 1,000                 |      0.534 ms     |     0.574 ms       |    0.668 ms    |
+| 100,000               |      61.915 ms      |      40.590 ms      |    47.929 ms    |
+
+### Quick Sort
+
+| Input Size / Sequence | Increasing | Decreasing | Random |
+| --------------------- | ---------- | ---------- | ------ |
+| 10                    |     0.237 ms       |     0.011 ms       |    0.005 ms    |
+| 100                   |       0.267 ms     |      0.11 ms      |     0.039 ms   |
+| 1,000                 |      1.531 ms      |     1.230 ms       |    0.120 ms    |
+| 100,000               |       12.995 s     |       10.593 s     |     83.986 ms   |
+
+### Selection Sort
+
+| Input Size / Sequence | Increasing | Decreasing | Random |
+| --------------------- | ---------- | ---------- | ------ |
+| 10                    |      0.001 ms      |     0.001 ms       |    0.001 ms    |
+| 100                   |       0.001 ms     |      0.012 ms      |    0.007 ms    |
+| 1,000                 |      0.003 ms      |     1.124 ms       |     0.570 ms   |
+| 100,000               |       0.318 ms     |      11.444 s      |   5.762 s     |
+
+
+
 
 
