@@ -63,3 +63,16 @@ It will generate the increasing,decreasing, and random array of your size and di
 Based on which algorithm you chose the program will use it to sort the array then display the sorted array along with how much time it took
 
 ![sort](https://github.com/alexkahndev/CS435-Assignment1/assets/140863288/e5dcc89e-3915-4c12-ad7b-cfe3547d2ff3)
+
+You will keep being prompted to do this until you enter ‘x’ or ‘X’ as and algorithm option, additionally you can kill the program with ctrl + c
+
+## Results
+| Sorting Algorithm | Size 10 | Size 100 | Size 1,000 | Size 100,000 |
+| ----------------- | ------- | -------- | ---------- | ------------ |
+| Bubble Sort       |         |          |            |              |
+| Insertion Sort    |         |          |            |              |
+| Merge Sort        |         |          |            |              |
+| Quick Sort        |         |          |            |              |
+| Selection Sort    |         |          |            |              |
+
+
